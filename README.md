@@ -41,6 +41,17 @@ src/
 - Node.js (v18 o superior)
 - PostgreSQL (v14 o superior)
 - npm o pnpm
+- Docker - Docker Compose
+
+## 🐳 Ejecutar con Docker
+
+### Paso 1: Construir y levantar los servicios
+
+```bash
+docker-compose up -d --build
+```
+
+## Ejecutar local
 
 ### Paso 1: Clonar e instalar dependencias
 
@@ -112,6 +123,7 @@ La API estará disponible en `http://localhost:3001`
 | POST | `/courses/:id/students` | Añadir estudiante a un curso |
 | GET | `/courses/:id/students` | Listar estudiantes de un curso |
 | DELETE | `/courses/:courseId/students/:studentId` | Eliminar estudiante |
+
 
 ### Ejemplos de Uso
 
